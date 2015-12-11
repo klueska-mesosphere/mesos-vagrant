@@ -1,0 +1,4 @@
+[submodule "mesos-dev/mesos"]
+	path = mesos-dev/mesos
+	url = https://git-wip-us.apache.org/repos/asf/mesos.git
+	ignore = all
