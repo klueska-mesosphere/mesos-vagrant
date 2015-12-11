@@ -8,7 +8,7 @@
 Vagrant.configure(2) do |config|
   config.vm.define "mesos-ubuntu-14.04" do |mesos_dev|
     mesos_dev.vm.box = "ubuntu/trusty64"
-    mesos_dev.vm.synced_folder "mesos-dev", "/home/vagrant/projects/mesos-dev"
+    mesos_dev.vm.synced_folder ".", "/home/vagrant/projects/mesos-vagrant"
     mesos_dev.vm.network :"private_network", type:"dhcp"
     mesos_dev.vm.hostname="mesos-ubuntu-14.04"
     mesos_dev.vm.provider "virtualbox" do |v|
@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "mesos-centos-6.6" do |mesos_dev|
     mesos_dev.vm.box = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box"
-    mesos_dev.vm.synced_folder "mesos-dev", "/home/vagrant/projects/mesos-dev"
+    mesos_dev.vm.synced_folder ".", "/home/vagrant/projects/mesos-vagrant"
     mesos_dev.vm.network :"private_network", type:"dhcp"
     mesos_dev.vm.hostname="mesos-centos-6.6"
     mesos_dev.vm.provider "virtualbox" do |v|
@@ -34,7 +34,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "mesos-centos-7.1" do |mesos_dev|
     mesos_dev.vm.box = "https://github.com/CommanderK5/packer-centos-template/releases/download/0.7.1/vagrant-centos-7.1.box"
-    mesos_dev.vm.synced_folder "mesos-dev", "/home/vagrant/projects/mesos-dev"
+    mesos_dev.vm.synced_folder ".", "/home/vagrant/projects/mesos-vagrant"
     mesos_dev.vm.network :"private_network", type:"dhcp"
     mesos_dev.vm.hostname="mesos-centos-7.1"
     mesos_dev.vm.provider "virtualbox" do |v|

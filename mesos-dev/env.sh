@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MESOS_DEV_ROOT=${HOME}/projects/mesos-dev
+MESOS_DEV_ROOT=${HOME}/projects/mesos-vagrant/mesos-dev
 MESOS_ROOT=${MESOS_DEV_ROOT}/mesos
 
 __mesos_common() {

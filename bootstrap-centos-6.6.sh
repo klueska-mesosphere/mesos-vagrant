@@ -43,7 +43,7 @@ sudo yum install -y git
 SET_MESOS_ENV=$(cat <<EOF
 
 # Source env.sh for mesos
-source \${HOME}/projects/mesos-dev/env.sh
+source \${HOME}/projects/mesos-vagrant/mesos-dev/env.sh
 EOF
 )
 sed -i -n '/\# Source env.sh for mesos/{x;d;};1h;1!{x;p;};${x;p;}' /home/vagrant/.bashrc

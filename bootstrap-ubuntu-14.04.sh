@@ -17,4 +17,4 @@ sudo apt-get install -y git
 
 # Set up symlink for .bash_profile.
 rm -rf /home/vagrant/.bash_profile
-ln -s /home/vagrant/projects/mesos-dev/env.sh /home/vagrant/.bash_profile
+ln -s /home/vagrant/projects/mesos-vagrant/mesos-dev/env.sh /home/vagrant/.bash_profile
