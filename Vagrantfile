@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "mesos-centos-7.1" do |mesos_dev|
-    mesos_dev.vm.box = "https://github.com/CommanderK5/packer-centos-template/releases/download/0.7.1/vagrant-centos-7.1.box"
+    mesos_dev.vm.box = "bento/centos-7.1"
     mesos_dev.vm.synced_folder ".", "/home/vagrant/projects/mesos-vagrant"
     mesos_dev.vm.network :"private_network", type:"dhcp"
     mesos_dev.vm.hostname="mesos-centos-7.1"
